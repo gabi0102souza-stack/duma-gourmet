@@ -29,6 +29,54 @@ main{position:relative}.butter-thread{position:absolute;inset:0 0 auto;width:100
 @media(max-width:767px){html{scroll-padding-top:25px}.header{min-height:86px;gap:12px}.brand strong{font-size:34px}.brand span{font-size:18px}.menu-toggle{display:block;z-index:2}.nav{display:none;position:absolute;top:78px;left:var(--gutter);right:var(--gutter);background:var(--respiro);padding:20px 25px;border:1px solid var(--pessego);border-radius:4px;gap:0;flex-direction:column}.nav.is-open{display:flex}.nav a{font-size:16px;padding:8px 0}.nav-contact{border:0}.hero{padding-top:110px;padding-bottom:70px;align-items:start}.hero-grid{grid-template-columns:1fr;gap:28px}.hero .eyebrow{margin-bottom:18px;font-size:12px}.hero h1{font-size:clamp(55px,12vw,82px);line-height:1}.hero-description{margin-top:20px;max-width:30ch;font-size:15px}.hero-actions{gap:15px;margin-top:24px}.hero-actions .btn{padding-inline:20px;font-size:13px}.hero-actions .text-link{font-size:13px}.hero-visual{width:75%;max-width:355px;margin-left:auto;padding-bottom:22px}.hero-photo{height:clamp(220px,60vw,320px)}.hero-note{right:auto;left:-80px;bottom:65px;font-size:24px;max-width:9ch}.hero-caption{font-size:12px}.hero-caption span:last-child{display:none}.hero-foot{bottom:22px;font-size:11px;letter-spacing:.05em}.hero-foot span{padding-inline:7px}.section-head{align-items:start;flex-direction:column;gap:24px;margin-bottom:32px}.section-head h2{margin-top:13px}.section-note{max-width:34ch;font-size:15px}.eyebrow{font-size:12px}.manifesto{padding:85px 0 90px}.manifesto-text{font-size:clamp(35px,8.7vw,55px);line-height:1.15}.manifesto .eyebrow{margin-bottom:25px}.scallop{height:18px}.cakes{padding:75px 0 60px}.cakes .section-head{gap:20px;flex-direction:row;align-items:end}.cakes .section-head h2{font-size:42px}.cake-tools{gap:7px}.cake-tools .circle-btn{width:44px;height:44px;min-width:44px;font-size:22px}.counter{display:none}.cake-card{width:min(78vw,330px)}.cake-card:nth-child(even){padding-top:25px}.cake-image{height:340px}.cake-card:nth-child(even) .cake-image{height:300px}.cake-track{gap:22px}.pasta{padding:65px 0}.pasta-grid{grid-template-columns:1fr;gap:30px}.pasta-art{width:190px;grid-row:2;margin-right:0}.pasta h2{font-size:clamp(43px,10vw,65px)}.elaine{padding:75px 0}.elaine-grid{grid-template-columns:1fr;gap:40px}.elaine-photo{height:450px;max-width:440px;margin:auto}.elaine h2{font-size:clamp(43px,10.4vw,66px)}.elaine-name{font-size:43px;margin-top:24px}.elaine-copy{font-size:15px}.clients{padding:65px 0}.testimonial{padding:25px;flex-basis:86%;min-width:0}.testimonial-track{gap:16px}.how{padding:75px 0}.steps{gap:22px}.step-number{font-size:72px}.step h3{font-size:18px;margin-top:18px;overflow-wrap:break-word}.step p{font-size:14px}.important{padding:80px 0 90px}.faq-grid{grid-template-columns:1fr;gap:38px}.faq-list summary{font-size:16px;min-height:72px}.instagram{padding:75px 0}.instagram-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.insta-tile:nth-child(3n+2){margin-top:0}.insta-tile:nth-child(even){margin-top:24px}.final{padding:75px 0 60px}.final h2{font-size:clamp(48px,12vw,72px)}.footer{padding:30px 0 calc(110px + env(safe-area-inset-bottom))}.footer-grid{flex-direction:column;gap:24px}.footer-links{gap:26px}.mobile-order{position:fixed;display:flex;bottom:0;left:0;right:0;z-index:40;background:var(--creme);border-top:1px solid var(--pessego);padding:10px 18px calc(10px + env(safe-area-inset-bottom))}.mobile-order .btn{width:100%;min-height:48px}.butter-thread path{stroke-width:2;opacity:.5}}
 @media(hover:hover) and (pointer:fine){.cursor{position:fixed;display:block;top:0;left:0;width:15px;height:15px;border:1px solid var(--cacau);border-radius:50%;z-index:99;pointer-events:none;opacity:0;transform:translate(-50%,-50%);transition:width .2s,height .2s,opacity .2s}.cursor.is-over{width:40px;height:40px;background:var(--pessego);opacity:.45!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.cursor{display:none!important}.butter-thread path{stroke-dashoffset:0!important;stroke-dasharray:none!important}.hero-note,.signature{transform:none}}
+
+/* Fotos reais, cardápio e continuidade */
+html.lenis,html.lenis body{height:auto}html.lenis.lenis-smooth{scroll-behavior:auto!important}
+.media-frame{position:relative;overflow:hidden;isolation:isolate}
+.photo-surface{position:absolute;inset:-4%;overflow:hidden;will-change:transform}.crop-box{position:absolute;inset:0;overflow:hidden}
+.photo-surface .crop-source{position:absolute;display:block;max-width:none;margin:0;object-fit:initial;pointer-events:none}
+.brand-image{display:block;width:82px;height:82px;border-radius:50%;background:var(--pessego)}.brand-image .photo-surface{inset:0}
+.header{position:fixed;min-height:110px;transition:min-height .35s,background .35s,border-color .35s;border-bottom:1px solid transparent}
+.header.is-scrolled{min-height:86px;background:var(--creme);border-bottom-color:rgb(82 50 19/.12)}
+.header.is-scrolled .brand-image{width:66px;height:66px}.header .brand-image{transition:width .35s,height .35s}
+.nav a.is-active{text-decoration:underline;text-underline-offset:7px}
+.page-progress{position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--rosa);transform-origin:left;transform:scaleX(var(--page-progress,0))}
+.hero h1>span{overflow:clip;padding-bottom:.035em;line-height:1.045}.hero-line-inner{display:inline-block;will-change:transform}
+.hero-photo::after{display:none}.hero-description{font-size:16px}.hero-photo{height:clamp(420px,44vw,640px)}
+.hero-detail{position:absolute;left:-44px;bottom:80px;width:145px;height:175px;border:7px solid var(--creme);border-radius:95px 95px 5px 5px;transform:rotate(-9deg);z-index:4;background:var(--pessego)}
+.hero-stamp{position:absolute;top:46px;right:-25px;z-index:4;width:104px;height:104px;display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:50%;background:var(--creme);border:1px solid var(--chocolate);transform:rotate(12deg);text-align:center}
+.hero-stamp .hand{font-size:25px}.hero-stamp small{font-size:10px;letter-spacing:.09em;text-transform:uppercase;margin-top:5px}
+.hero-note{right:8px;bottom:-4px;font-size:28px}
+.craft-ribbon{overflow:hidden;border-block:1px solid rgb(82 50 19/.12);background:var(--pessego);padding:16px 0}
+.ribbon-track{display:flex;width:max-content;animation:ribbon 40s linear infinite}
+.ribbon-track span{flex:none;white-space:nowrap;font:500 clamp(21px,2.2vw,31px)/1.2 var(--display);padding-right:32px}.ribbon-track i{font-style:normal;color:var(--cacau);padding-inline:25px}
+@keyframes ribbon{to{transform:translateX(-50%)}}
+.manifesto-text .word{margin-right:0}.butter-thread{z-index:1}.butter-thread path{stroke-width:3;opacity:.44}
+.cake-card p{font-size:16px}.cake-image{transition:border-radius .55s,transform .55s}
+@media(hover:hover){.cake-card:hover .cake-image{border-radius:120px 120px 18px 18px;transform:translateY(-5px)}.cake-card:nth-child(even):hover .cake-image{border-radius:18px 18px 120px 120px}}
+.ifood-menu{background:var(--respiro);padding:100px 0 90px}.ifood-menu .section-head{align-items:start}.menu-intro{max-width:31ch;margin-top:18px}
+.menu-featured{display:grid;grid-template-columns:1.45fr 1fr 1fr;gap:24px;align-items:end}.menu-feature{min-width:0}.menu-feature:first-child{padding-right:20px}
+.menu-feature-photo{aspect-ratio:1.05;background:var(--pessego);border-radius:4px 100px 4px 4px}
+.menu-feature:first-child .menu-feature-photo{aspect-ratio:1.06;border-radius:50% 50% 5px 5px/40% 40% 5px 5px}
+.menu-feature:nth-child(3) .menu-feature-photo{border-radius:100px 4px 4px 4px}
+.menu-feature h3{margin-top:23px;font-size:clamp(26px,2.8vw,40px)}.menu-feature p{font-size:15px;color:var(--cacau);margin-top:12px}
+.menu-price{display:block;font-family:var(--display);font-size:25px;margin-top:14px}.menu-feature .text-link{margin-top:8px}
+.menu-tag{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:15px}
+.menu-more{margin-top:50px;border-block:1px solid var(--chocolate)}.menu-more>summary{list-style:none;min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:17px;font-weight:600;cursor:pointer}
+.menu-more>summary::-webkit-details-marker{display:none}.menu-more>summary::after{content:"+";font-size:30px;line-height:1}.menu-more[open]>summary::after{content:"−"}
+.menu-list{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;padding-bottom:30px}.menu-item{display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:17px;padding:20px 0;border-top:1px solid var(--pessego);min-width:0}
+.menu-thumb{width:70px;height:76px;border-radius:30px 30px 4px 4px;background:var(--pessego)}.menu-item h4{font:600 16px/1.4 var(--body);margin:0}.menu-item p{font-size:13px;color:var(--cacau);margin-top:5px}
+.menu-item-price{font:500 20px/1.2 var(--display);white-space:nowrap;text-align:right}.menu-item-price small{font:400 12px/1.3 var(--body);white-space:normal;display:block;max-width:7ch}.menu-item .text-link{font-size:12px}
+.menu-bottom{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-top:26px}.menu-bottom p{font-size:13px;color:var(--cacau);max-width:58ch}.menu-bottom .text-link{white-space:nowrap}
+.elaine-copy{font-size:16px}.elaine-photo .photo-surface{inset:-4%}.elaine-photo{max-height:630px}
+.instagram-grid{gap:18px}.insta-tile{border-radius:90px 90px 4px 4px}.insta-tile:nth-child(even){border-radius:4px 4px 90px 90px}
+.final .rosette{width:100px;height:100px}.faq-list details[open] p{animation:answer .3s ease both}
+@keyframes answer{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1023px){.header .brand-image{width:72px;height:72px}.nav{gap:16px}.menu-featured{gap:20px;grid-template-columns:1.25fr 1fr 1fr}.menu-feature:first-child{padding-right:0}.menu-feature h3{font-size:28px}.menu-list{gap:0 25px}.menu-item{grid-template-columns:60px 1fr;gap:14px}.menu-thumb{width:60px;height:70px}.menu-item-price{grid-column:2;text-align:left}.menu-item-price small{max-width:none}.menu-item .text-link{margin-left:15px}.hero-stamp{width:90px;height:90px;right:-14px}}
+@media(max-width:767px){.header{min-height:88px}.header.is-scrolled{min-height:76px}.header .brand-image{width:66px;height:66px}.header.is-scrolled .brand-image{width:58px;height:58px}.nav{top:80px}.header.is-scrolled .nav{top:72px}.hero{padding-top:115px;padding-bottom:72px}.hero-grid{gap:32px}.hero-description{font-size:16px}.hero-actions{gap:12px 20px}.hero-actions .btn{font-size:13px}.hero-visual{width:77%;max-width:370px}.hero-photo{height:clamp(285px,76vw,390px)}.hero-detail{left:-64px;bottom:62px;width:106px;height:129px;border-width:5px;border-radius:64px 64px 4px 4px}.hero-stamp{top:15px;right:-9px;width:78px;height:78px}.hero-stamp .hand{font-size:20px}.hero-stamp small{font-size:9px;letter-spacing:.05em}.hero-note{left:-64px;right:auto;bottom:9px;font-size:22px;max-width:9ch}.hero-caption{padding-left:12px;font-size:11px}.craft-ribbon{padding:14px 0}.ribbon-track span{font-size:23px}.ifood-menu{padding:70px 0}.menu-featured{grid-template-columns:1fr 1fr;gap:28px 18px}.menu-feature:first-child{grid-column:1/-1;display:grid;grid-template-columns:1.12fr 1fr;gap:18px;align-items:center}.menu-feature:first-child .menu-feature-photo{height:270px;aspect-ratio:auto}.menu-feature:first-child h3{margin-top:8px;font-size:30px;line-height:1.03}.menu-feature .menu-tag{font-size:11px;letter-spacing:.07em;margin-bottom:10px}.menu-feature:first-child p{font-size:14px}.menu-feature h3{font-size:27px;margin-top:18px}.menu-feature-photo{aspect-ratio:1/1.1;border-radius:4px 70px 4px 4px}.menu-feature:nth-child(3) .menu-feature-photo{border-radius:70px 4px 4px 4px}.menu-price{font-size:23px}.menu-list{grid-template-columns:1fr;gap:0}.menu-item{grid-template-columns:64px 1fr auto;gap:14px}.menu-thumb{width:64px;height:74px}.menu-item-price{grid-column:auto;text-align:right;font-size:19px}.menu-item h4{font-size:15px}.menu-item .text-link{margin:0;font-size:12px}.menu-item-price small{max-width:7ch}.menu-bottom{align-items:start;flex-direction:column;gap:12px}.menu-more{margin-top:35px}.menu-more>summary{font-size:16px;min-height:72px}.elaine-copy{font-size:16px}.insta-tile{border-radius:70px 70px 4px 4px}.insta-tile:nth-child(even){border-radius:4px 4px 70px 70px}.butter-thread path{stroke-width:2;opacity:.35}}
+@media(prefers-reduced-motion:reduce){.ribbon-track{animation:none}.photo-surface{will-change:auto}.hero-line-inner{will-change:auto}.header,.header .brand-image{transition:none}.menu-feature-photo,.cake-image{transform:none!important}}
+
+@media(max-width:767px){.hero{padding-top:105px}.hero h1{font-size:clamp(52px,12vw,78px)}.hero .eyebrow{margin-bottom:12px}.hero-description{margin-top:16px}.hero-actions{margin-top:20px}.hero-actions [data-ifood]{display:none}.hero-grid{gap:24px}.hero-photo{height:clamp(235px,64vw,310px)}html{scroll-padding-top:88px}}
 </style>
 </head>
 <body>
@@ -36,16 +84,17 @@ main{position:relative}.butter-thread{position:absolute;inset:0 0 auto;width:100
 <header class="header shell">
 <a class="brand" href="#inicio" aria-label="Duma Cozinha Gourmet, início"><strong>DUMA</strong><span>cozinha gourmet</span></a>
 <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navegacao"><span></span><span></span></button>
-<nav class="nav" id="navegacao" aria-label="Navegação principal"><a href="#bolos">Bolos</a><a href="#elaine">A Elaine</a><a href="#clientes">Clientes</a><a href="#como-comprar">Como comprar</a><a href="#importante">Importante</a><a href="https://wa.me/5511983660573" class="nav-contact" data-order>Vamos conversar</a></nav>
+<nav class="nav" id="navegacao" aria-label="Navegação principal"><a href="#bolos">Bolos</a><a href="#cardapio">iFood</a><a href="#elaine">A Elaine</a><a href="#clientes">Clientes</a><a href="#como-comprar">Como comprar</a><a href="#importante">Importante</a><a href="https://wa.me/5511983660573" class="nav-contact" data-order>Vamos conversar</a></nav><span class="page-progress" aria-hidden="true"></span>
 </header>
 <main id="conteudo">
 <svg class="butter-thread" aria-hidden="true" preserveAspectRatio="none"><path id="butter-path"/></svg>
 <section class="hero shell" id="inicio" aria-labelledby="hero-title">
 <div class="hero-grid">
-<div class="hero-copy"><p class="eyebrow">Da cozinha da Elaine, com carinho</p><h1 id="hero-title"><span>Sabores</span><span>incríveis,</span><span>até <em>você.</em></span></h1><p class="hero-description">Bolos com buttercream e massas frescas. Feitos à mão, para deixar seu momento ainda mais gostoso.</p><div class="hero-actions"><a class="btn magnetic" href="https://wa.me/5511983660573" data-order>Encomendar pelo WhatsApp</a><a class="text-link" href="#bolos">Ver bolos</a></div></div>
-<figure class="hero-visual"><div class="hero-photo arch" data-photo="hero"><div class="photo-placeholder"><span>Bolos com buttercream</span><small>Foto da Duma a incluir</small></div></div><figcaption class="hero-caption"><span>O carinho está nos detalhes.</span><span>Duma Cozinha Gourmet</span></figcaption><span class="hand hero-note">um pedacinho<br>de felicidade</span></figure>
+<div class="hero-copy"><p class="eyebrow">Da cozinha da Elaine, com carinho</p><h1 id="hero-title"><span><span class="hero-line-inner">Sabores</span></span><span><span class="hero-line-inner">incríveis,</span></span><span><span class="hero-line-inner">até <em>você.</em></span></span></h1><p class="hero-description">Bolos com buttercream e massas frescas. Feitos à mão, para deixar seu momento ainda mais gostoso.</p><div class="hero-actions"><a class="btn magnetic" href="https://wa.me/5511983660573" data-order>Encomendar pelo WhatsApp</a><a class="text-link" href="#bolos">Ver bolos</a><a class="text-link" data-ifood href="https://www.ifood.com.br/delivery/sao-paulo-sp/duma-gourmet---bolo-de-pote-geladinho-vila-curuca/d5eb26d9-3cec-48c6-91b6-81252acd18cf" target="_blank" rel="noopener noreferrer">Pedir no iFood</a></div></div>
+<figure class="hero-visual"><div class="hero-photo arch" data-photo="hero"><div class="photo-placeholder"><span>Bolos com buttercream</span><small>Foto da Duma a incluir</small></div></div><div class="hero-detail media-frame" data-photo="detalhe" aria-hidden="true"></div><div class="hero-stamp" aria-hidden="true"><span class="hand">feito<br>à mão</span><small>com carinho</small></div><figcaption class="hero-caption"><span>O carinho está nos detalhes.</span><span>Duma Cozinha Gourmet</span></figcaption><span class="hand hero-note">um pedacinho<br>de felicidade</span></figure>
 </div><p class="hero-foot">Feito à mão <span>·</span> Bolos & massas frescas</p>
 </section>
+<div class="craft-ribbon" aria-hidden="true"><div class="ribbon-track"><span>Bolos com buttercream<i>·</i>Feito à mão<i>·</i>Massas frescas<i>·</i>Carinho em cada detalhe<i>·</i></span><span>Bolos com buttercream<i>·</i>Feito à mão<i>·</i>Massas frescas<i>·</i>Carinho em cada detalhe<i>·</i></span><span>Bolos com buttercream<i>·</i>Feito à mão<i>·</i>Massas frescas<i>·</i>Carinho em cada detalhe<i>·</i></span><span>Bolos com buttercream<i>·</i>Feito à mão<i>·</i>Massas frescas<i>·</i>Carinho em cada detalhe<i>·</i></span></div></div>
 <section class="manifesto" aria-labelledby="manifesto-title">
 <svg class="scallop" aria-hidden="true"><defs><pattern id="scallop-top" width="60" height="25" patternUnits="userSpaceOnUse"><path d="M0 0H60Q30 45 0 0" fill="currentColor"/></pattern></defs><rect width="100%" height="100%" fill="url(#scallop-top)"/></svg>
 <div class="shell"><p class="eyebrow">Levando sabores incríveis até você</p><h2 class="manifesto-text" id="manifesto-title">Tem coisa que a gente sente antes da primeira mordida. <em>O carinho é uma delas.</em></h2><p class="hand">É assim que eu gosto de cozinhar.</p></div>
@@ -59,6 +108,12 @@ main{position:relative}.butter-thread{position:absolute;inset:0 0 auto;width:100
 <section class="pasta" id="massas" aria-labelledby="pasta-title"><div class="shell pasta-grid">
 <div class="pasta-art" aria-hidden="true"><svg viewBox="0 0 320 280"><ellipse cx="160" cy="150" rx="135" ry="100"/><ellipse cx="160" cy="150" rx="111" ry="80"/><path d="M88 125C60 162 142 167 177 123S262 156 220 173S95 178 116 139S223 98 206 146S149 203 135 158S192 104 221 131M107 111C146 78 218 89 203 116S114 174 98 151S157 102 168 142S232 185 237 153M122 180C147 207 191 200 213 178M72 44L116 81M79 33L121 70M89 25L131 62M76 36L65 23M83 31L74 18M90 26L83 13M121 70L143 91"/></svg><p class="hand">a mesa pede encontro</p></div>
 <div><p class="eyebrow">02 / Massas frescas</p><h2 id="pasta-title">Um convite para <em>ficar à mesa.</em></h2><p>Feitas à mão, para acompanhar as conversas e os bons momentos. Fale comigo para conhecer os sabores disponíveis.</p><a class="btn magnetic" href="https://wa.me/5511983660573" data-order data-message="Olá, Elaine! Quais são os sabores de massas frescas disponíveis hoje?">Peça os sabores do dia</a></div>
+</div></section>
+<section class="ifood-menu" id="cardapio" aria-labelledby="menu-title"><div class="shell">
+<div class="section-head"><div><p class="eyebrow">No iFood / Geladinhos gourmet</p><h2 id="menu-title">Um carinho<br><em>bem geladinho.</em></h2><p class="menu-intro">Para uma pausa gostosa no seu dia. Escolha seu sabor e peça pelo iFood.</p></div><a class="btn magnetic" data-ifood href="https://www.ifood.com.br/delivery/sao-paulo-sp/duma-gourmet---bolo-de-pote-geladinho-vila-curuca/d5eb26d9-3cec-48c6-91b6-81252acd18cf" target="_blank" rel="noopener noreferrer">Abrir cardápio no iFood</a></div>
+<div class="menu-featured" id="menu-featured"></div>
+<details class="menu-more" id="menu-more"><summary>Conheça os 16 sabores</summary><div class="menu-list" id="menu-list"></div></details>
+<div class="menu-bottom"><p>Preços de referência. Confira o valor final e a disponibilidade no iFood.</p><a class="text-link" data-ifood href="https://www.ifood.com.br/delivery/sao-paulo-sp/duma-gourmet---bolo-de-pote-geladinho-vila-curuca/d5eb26d9-3cec-48c6-91b6-81252acd18cf" target="_blank" rel="noopener noreferrer">Veja também os bolos de pote no app</a></div>
 </div></section>
 <section class="elaine" id="elaine" aria-labelledby="elaine-title"><div class="shell elaine-grid">
 <figure><div class="elaine-photo arch" data-photo="elaine"><div class="photo-placeholder"><span>Elaine Souza</span><small>Retrato da Elaine a incluir</small></div></div><figcaption class="portrait-caption"><span>Elaine Souza</span><span class="hand">prazer, Elaine!</span></figcaption></figure>
@@ -88,54 +143,434 @@ main{position:relative}.butter-thread{position:absolute;inset:0 0 auto;width:100
 <section class="final" aria-labelledby="final-title"><div class="shell"><p class="eyebrow">Sua próxima celebração começa aqui</p><h2 id="final-title">Vamos fazer<br>algo <em>gostoso?</em></h2><p>Me conte seu desejo. Eu cuido do carinho em cada detalhe.</p><a class="btn magnetic" href="https://wa.me/5511983660573" data-order>Encomendar pelo WhatsApp</a><svg class="rosette" viewBox="0 0 100 100" aria-hidden="true"><path d="M51 48C44 39 31 44 33 56S53 72 64 59S63 33 45 31S19 43 20 59S39 85 58 78S86 52 75 31S45 15 28 24S8 48 14 65S44 94 67 83S98 47 84 24S47 4 28 16"/></svg></div></section>
 <noscript><p class="noscript">Para conhecer os bolos e combinar sua encomenda, <a class="text-link" href="https://wa.me/5511983660573">fale com a Elaine pelo WhatsApp</a>.</p></noscript>
 </main>
-<footer class="footer"><div class="shell"><div class="footer-grid"><a class="brand" href="#inicio" aria-label="Voltar ao início"><strong>DUMA</strong><span>cozinha gourmet</span></a><div class="footer-links"><a class="text-link" data-instagram href="https://www.instagram.com/dumagourmet/" target="_blank" rel="noopener noreferrer">Instagram</a><a class="text-link" data-order href="https://wa.me/5511983660573">WhatsApp</a></div><p class="footer-address" id="footer-address">Entrega pelo iFood.<br>Retirada: Rua Benjamim Capusso, 703.</p></div><small>© <span id="year">2026</span> Duma Cozinha Gourmet. Levando sabores incríveis até você.</small></div></footer>
+<footer class="footer"><div class="shell"><div class="footer-grid"><a class="brand" href="#inicio" aria-label="Voltar ao início"><strong>DUMA</strong><span>cozinha gourmet</span></a><div class="footer-links"><a class="text-link" data-instagram href="https://www.instagram.com/dumagourmet/" target="_blank" rel="noopener noreferrer">Instagram</a><a class="text-link" data-order href="https://wa.me/5511983660573">WhatsApp</a><a class="text-link" data-ifood href="https://www.ifood.com.br/delivery/sao-paulo-sp/duma-gourmet---bolo-de-pote-geladinho-vila-curuca/d5eb26d9-3cec-48c6-91b6-81252acd18cf" target="_blank" rel="noopener noreferrer">iFood</a></div><p class="footer-address" id="footer-address">Entrega pelo iFood.<br>Retirada: Rua Benjamim Capusso, 703.</p></div><small>© <span id="year">2026</span> Duma Cozinha Gourmet. Levando sabores incríveis até você.</small></div></footer>
 <div class="mobile-order"><a class="btn" href="https://wa.me/5511983660573" data-order>Encomendar no WhatsApp</a></div>
 <div class="cursor" aria-hidden="true"></div>
 <script>
 // CONFIG: troque os dados e caminhos aqui. Fotos ausentes usam apenas a paleta.
+// Fotos reais: recorte delimita a foto no print sem alterar o original.
+// Se receber a foto original, troque imagem e remova recorte.
+// Nomes dos bolos descrevem a decoração; sabores e detalhes são combinados com a Elaine.
 const CONFIG = {
-  whatsapp:'5511983660573', // País + DDD + número, somente dígitos.
-  mensagemPadrao:'Olá, Elaine! Quero fazer uma encomenda na Duma Cozinha Gourmet.',
-  instagram:'https://www.instagram.com/dumagourmet/',
-  regiao:'[CONFIRMAR CIDADE/REGIÃO]',
-  retirada:'Rua Benjamim Capusso, 703',
-  entrega:'Entrega pelo iFood', // Adicionar o link real do iFood quando disponível.
-  fotos:{
-    logo:'', // './assets/logo-duma.png'; vazio = marca tipográfica provisória.
-    hero:'', // './assets/bolo-hero.jpg'
-    elaine:'' // './assets/elaine.jpg'; não substituir por retrato de outra pessoa.
+  "whatsapp": "5511983660573",
+  "mensagemPadrao": "Olá, Elaine! Quero fazer uma encomenda na Duma Cozinha Gourmet.",
+  "instagram": "https://www.instagram.com/dumagourmet/",
+  "regiao": "São Paulo, SP",
+  "retirada": "Rua Benjamim Capusso, 703",
+  "entrega": "Entrega pelo iFood",
+  "fotos": {
+    "logo": "./assets/instagram-perfil.png",
+    "logoRecorte": {
+      "x": 44,
+      "y": 186,
+      "w": 136,
+      "h": 136
+    },
+    "hero": "./assets/instagram-bolos.png",
+    "heroRecorte": {
+      "x": 245,
+      "y": 857,
+      "w": 231,
+      "h": 311
+    },
+    "elaine": "./assets/instagram-perfil.png",
+    "elaineRecorte": {
+      "x": 484,
+      "y": 902,
+      "w": 232,
+      "h": 312
+    },
+    "detalhe": "./assets/instagram-bolos.png",
+    "detalheRecorte": {
+      "x": 244,
+      "y": 258,
+      "w": 232,
+      "h": 268
+    }
   },
-  // [CONFIRMAR NOMES E DESCRIÇÕES COM A ELAINE]. Sugestões de modelos, não sabores.
-  produtos:[
-    {nome:'Flores & buttercream',descricao:'Flores naturais e acabamento delicado. Uma inspiração para sua celebração.',imagem:'',alt:'Bolo alto com buttercream claro e flores naturais',nota:'Flores naturais'}, // './assets/bolo-flores.jpg'
-    {nome:'Ondas de carinho',descricao:'Texturas de buttercream feitas à mão. Cada detalhe tem seu próprio encanto.',imagem:'',alt:'Bolo com ondas de buttercream feitas com espátula',nota:'Textura artesanal'}, // './assets/bolo-ondas.jpg'
-    {nome:'Jardim de festa',descricao:'A delicadeza das flores encontra um bolo feito para o seu momento.',imagem:'',alt:'Bolo com buttercream e composição de flores para festa',nota:'Para celebrar'}, // './assets/bolo-jardim.jpg'
-    {nome:'Seu bolo, seu jeito',descricao:'Vamos conversar sobre a inspiração, as cores e os detalhes da sua encomenda.',imagem:'',alt:'Bolo de buttercream personalizado da Duma',nota:'Vamos imaginar juntas'} // './assets/bolo-personalizado.jpg'
+  "produtos": [
+    {
+      "nome": "Flores vermelhas",
+      "descricao": "Flores, dois andares e buttercream delicado. Uma inspiração para celebrar.",
+      "imagem": "./assets/instagram-bolos.png",
+      "recorte": {
+        "x": 4,
+        "y": 578,
+        "w": 230,
+        "h": 269
+      },
+      "alt": "Bolo da Duma com dois andares de buttercream e flores vermelhas",
+      "nota": "Flores & celebração"
+    },
+    {
+      "nome": "Buttercream & rosas",
+      "descricao": "Flores em tons de rosa e detalhes feitos com bico de confeitar.",
+      "imagem": "./assets/instagram-bolos.png",
+      "recorte": {
+        "x": 245,
+        "y": 857,
+        "w": 231,
+        "h": 311
+      },
+      "alt": "Bolo branco de três andares com flores em tons de rosa",
+      "nota": "Carinho em cada andar"
+    },
+    {
+      "nome": "Clássico em branco",
+      "descricao": "Buttercream texturizado e uma composição elegante para sua mesa.",
+      "imagem": "./assets/instagram-bolos.png",
+      "recorte": {
+        "x": 3,
+        "y": 258,
+        "w": 232,
+        "h": 269
+      },
+      "alt": "Bolo branco de dois andares com acabamento texturizado, sobre base dourada",
+      "nota": "Textura artesanal"
+    },
+    {
+      "nome": "Flores em tons de rosa",
+      "descricao": "Um encontro de flores e texturas suaves, com o cuidado da Duma.",
+      "imagem": "./assets/instagram-bolos.png",
+      "recorte": {
+        "x": 486,
+        "y": 857,
+        "w": 230,
+        "h": 310
+      },
+      "alt": "Detalhe de bolo da Duma com flores claras e flores em tons de rosa",
+      "nota": "Detalhes que encantam"
+    }
   ],
-  // [CONFIRMAR COM A ELAINE]: texto sugerido em primeira pessoa, sem fatos biográficos.
-  elaine:{
-    textos:['Eu gosto de transformar um desejo em algo gostoso. Um bolo para celebrar, uma massa para reunir, um detalhe para deixar o dia especial.','Aqui, cada encomenda começa com uma conversa e ganha forma pelas minhas mãos. Quero levar esse carinho até a sua mesa.'],
-    valores:['Feito sob encomenda','Ingredientes de verdade','Carinho em cada detalhe']
+  "elaine": {
+    "textos": [
+      "Eu gosto de transformar um desejo em algo gostoso. Um bolo para celebrar, uma massa para reunir, um detalhe para deixar o dia especial.",
+      "Aqui, cada encomenda começa com uma conversa e ganha forma pelas minhas mãos. Quero levar esse carinho até a sua mesa."
+    ],
+    "valores": [
+      "Feito sob encomenda",
+      "Ingredientes de verdade",
+      "Carinho em cada detalhe"
+    ]
   },
-  // Substituir por depoimentos reais, com autorização. Sem nomes inventados.
-  depoimentos:[
-    {texto:'[SUBSTITUIR POR DEPOIMENTO REAL]',nome:''},
-    {texto:'[SUBSTITUIR POR DEPOIMENTO REAL]',nome:''},
-    {texto:'[SUBSTITUIR POR DEPOIMENTO REAL]',nome:''}
+  "depoimentos": [
+    {
+      "texto": "[SUBSTITUIR POR DEPOIMENTO REAL]",
+      "nome": ""
+    },
+    {
+      "texto": "[SUBSTITUIR POR DEPOIMENTO REAL]",
+      "nome": ""
+    },
+    {
+      "texto": "[SUBSTITUIR POR DEPOIMENTO REAL]",
+      "nome": ""
+    }
   ],
-  fluxo:'[CONFIRMAR COM A ELAINE: disponibilidade, personalização e pagamento. Entrega e retirada informadas pelo responsável.]',
-  faq:[
-    {pergunta:'Com quanto tempo devo encomendar?',resposta:'[CONFIRMAR] A antecedência mínima depende da confirmação da Elaine. Fale pelo WhatsApp e informe a data desejada.'},
-    {pergunta:'Tem entrega ou retirada?',resposta:'A entrega é pelo iFood. Você também pode retirar na Rua Benjamim Capusso, 703. Combine a disponibilidade e o horário com a Elaine.'},
-    {pergunta:'Quais são as formas de pagamento?',resposta:'[CONFIRMAR] Consulte a Elaine para combinar as formas e as condições de pagamento.'},
-    {pergunta:'Posso personalizar o meu bolo?',resposta:'[CONFIRMAR] Compartilhe sua inspiração com a Elaine para consultar as possibilidades de personalização.'}
+  "fluxo": "[CONFIRMAR COM A ELAINE: disponibilidade, personalização e pagamento. Entrega e retirada informadas pelo responsável.]",
+  "faq": [
+    {
+      "pergunta": "Com quanto tempo devo encomendar?",
+      "resposta": "[CONFIRMAR] A antecedência mínima depende da confirmação da Elaine. Fale pelo WhatsApp e informe a data desejada."
+    },
+    {
+      "pergunta": "Tem entrega ou retirada?",
+      "resposta": "A entrega é pelo iFood. Você também pode retirar na Rua Benjamim Capusso, 703. Combine a disponibilidade e o horário com a Elaine."
+    },
+    {
+      "pergunta": "Quais são as formas de pagamento?",
+      "resposta": "[CONFIRMAR] Consulte a Elaine para combinar as formas e as condições de pagamento."
+    },
+    {
+      "pergunta": "Posso personalizar o meu bolo?",
+      "resposta": "[CONFIRMAR] Compartilhe sua inspiração com a Elaine para consultar as possibilidades de personalização."
+    }
   ],
-  // Troque por seis fotos reais. Exemplo: {imagem:'./assets/instagram-01.jpg',alt:'...',url:'https://www.instagram.com/p/POST_REAL/'}
-  instagramFotos:Array.from({length:6},function(_,i){return {imagem:'',alt:'Detalhe '+(i+1)+' dos bolos artesanais da Duma Cozinha Gourmet',url:''}}),
-  bibliotecas:{
-    gsap:'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js',
-    scrollTrigger:'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js',
-    lenis:'https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js'
+  "instagramFotos": [
+    {
+      "imagem": "./assets/instagram-bolos.png",
+      "recorte": {
+        "x": 3,
+        "y": 258,
+        "w": 232,
+        "h": 269
+      },
+      "alt": "Bolo branco texturizado sobre base dourada"
+    },
+    {
+      "imagem": "./assets/instagram-bolos.png",
+      "recorte": {
+        "x": 244,
+        "y": 258,
+        "w": 232,
+        "h": 268
+      },
+      "alt": "Bolo com cobertura escura e biscoitos na decoração"
+    },
+    {
+      "imagem": "./assets/instagram-bolos.png",
+      "recorte": {
+        "x": 4,
+        "y": 578,
+        "w": 230,
+        "h": 269
+      },
+      "alt": "Bolo de dois andares com flores vermelhas"
+    },
+    {
+      "imagem": "./assets/instagram-bolos.png",
+      "recorte": {
+        "x": 245,
+        "y": 538,
+        "w": 231,
+        "h": 307
+      },
+      "alt": "Bolo branco quadrado com decoração de flores"
+    },
+    {
+      "imagem": "./assets/instagram-bolos.png",
+      "recorte": {
+        "x": 4,
+        "y": 857,
+        "w": 231,
+        "h": 311
+      },
+      "alt": "Buttercream branco com acabamento em ondas e detalhes amarelos"
+    },
+    {
+      "imagem": "./assets/instagram-bolos.png",
+      "recorte": {
+        "x": 245,
+        "y": 857,
+        "w": 231,
+        "h": 311
+      },
+      "alt": "Bolo de três andares com flores em tons de rosa"
+    }
+  ],
+  "bibliotecas": {
+    "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+    "scrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js",
+    "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"
+  },
+  "ifood": "https://www.ifood.com.br/delivery/sao-paulo-sp/duma-gourmet---bolo-de-pote-geladinho-vila-curuca/d5eb26d9-3cec-48c6-91b6-81252acd18cf",
+  "cardapio": {
+    "fonte": "Capturas do iFood enviadas pelo responsável em 08/10/2026. Valores de referência; preço final e disponibilidade confirmados no app.",
+    "destaques": [
+      "ninho-nutella",
+      "coco",
+      "floresta-branca"
+    ],
+    "sabores": [
+      {
+        "id": "abacaxi-vinho",
+        "nome": "Abacaxi ao vinho",
+        "descricao": "Uma combinação de abacaxi e vinho.",
+        "preco": 8.54,
+        "imagem": "./assets/ifood-sabores-01.png",
+        "recorte": {
+          "x": 475,
+          "y": 456,
+          "w": 145,
+          "h": 164
+        }
+      },
+      {
+        "id": "capuccino",
+        "nome": "Capuccino",
+        "descricao": "Para quem gosta de café.",
+        "preco": 8.54,
+        "imagem": "./assets/ifood-sabores-01.png",
+        "recorte": {
+          "x": 487,
+          "y": 759,
+          "w": 166,
+          "h": 164
+        }
+      },
+      {
+        "id": "floresta-negra",
+        "nome": "Floresta Negra",
+        "descricao": "Um clássico em versão geladinho.",
+        "preco": 8.27,
+        "imagem": "./assets/ifood-sabores-01.png",
+        "recorte": {
+          "x": 487,
+          "y": 1061,
+          "w": 166,
+          "h": 164
+        }
+      },
+      {
+        "id": "amendoim",
+        "nome": "Amendoim",
+        "descricao": "Cremoso, com sabor de amendoim.",
+        "preco": 8.5,
+        "imagem": "./assets/ifood-sabores-02.png",
+        "recorte": {
+          "x": 480,
+          "y": 323,
+          "w": 147,
+          "h": 164
+        }
+      },
+      {
+        "id": "ceu-azul",
+        "nome": "Céu azul",
+        "descricao": "Um toque de cor para refrescar.",
+        "preco": 8.54,
+        "imagem": "./assets/ifood-sabores-02.png",
+        "recorte": {
+          "x": 459,
+          "y": 625,
+          "w": 222,
+          "h": 164
+        }
+      },
+      {
+        "id": "coco",
+        "nome": "Coco",
+        "descricao": "O carinho de um sabor clássico.",
+        "preco": 8.27,
+        "imagem": "./assets/ifood-sabores-02.png",
+        "recorte": {
+          "x": 459,
+          "y": 984,
+          "w": 222,
+          "h": 164
+        }
+      },
+      {
+        "id": "doce-leite-ameixa",
+        "nome": "Doce de leite com ameixa",
+        "descricao": "Doce de leite e ameixa no mesmo geladinho.",
+        "preco": null,
+        "imagem": "./assets/ifood-sabores-02.png",
+        "recorte": {
+          "x": 459,
+          "y": 1285,
+          "w": 222,
+          "h": 128
+        }
+      },
+      {
+        "id": "maracuja-nutella",
+        "nome": "Maracujá com Nutella",
+        "descricao": "Maracujá com um toque de Nutella.",
+        "preco": 8.9,
+        "imagem": "./assets/ifood-sabores-03.png",
+        "recorte": {
+          "x": 460,
+          "y": 305,
+          "w": 169,
+          "h": 162
+        }
+      },
+      {
+        "id": "ninho-maracuja",
+        "nome": "Ninho com maracujá",
+        "descricao": "Cremoso, com geleia de maracujá.",
+        "preco": 8.25,
+        "imagem": "./assets/ifood-sabores-03.png",
+        "recorte": {
+          "x": 488,
+          "y": 633,
+          "w": 164,
+          "h": 163
+        }
+      },
+      {
+        "id": "ninho-nutella",
+        "nome": "Ninho com Nutella",
+        "descricao": "Uma combinação para saborear devagar.",
+        "preco": 9.17,
+        "imagem": "./assets/ifood-sabores-03.png",
+        "recorte": {
+          "x": 459,
+          "y": 962,
+          "w": 222,
+          "h": 162
+        }
+      },
+      {
+        "id": "romeu-julieta",
+        "nome": "Romeu e Julieta",
+        "descricao": "Queijo cremoso com goiabada.",
+        "preco": null,
+        "imagem": "./assets/ifood-sabores-03.png",
+        "recorte": {
+          "x": 508,
+          "y": 1296,
+          "w": 123,
+          "h": 117
+        }
+      },
+      {
+        "id": "doce-leite-pacoca",
+        "nome": "Doce de leite com paçoca",
+        "descricao": "Doce de leite com o carinho da paçoca.",
+        "preco": 8.9,
+        "imagem": "./assets/ifood-sabores-04.png",
+        "recorte": {
+          "x": 488,
+          "y": 439,
+          "w": 140,
+          "h": 153
+        }
+      },
+      {
+        "id": "pudim",
+        "nome": "Pudim",
+        "descricao": "Pudim em versão geladinho, com calda.",
+        "preco": 10.8,
+        "imagem": "./assets/ifood-sabores-04.png",
+        "recorte": {
+          "x": 534,
+          "y": 747,
+          "w": 72,
+          "h": 133
+        }
+      },
+      {
+        "id": "manga",
+        "nome": "Manga",
+        "descricao": "Um sabor frutado para refrescar.",
+        "preco": 8.45,
+        "imagem": "./assets/ifood-sabores-04.png",
+        "recorte": {
+          "x": 487,
+          "y": 1033,
+          "w": 165,
+          "h": 163
+        }
+      },
+      {
+        "id": "maracuja-banana",
+        "nome": "Maracujá com banana",
+        "descricao": "A combinação de maracujá e banana.",
+        "preco": 8.9,
+        "imagem": "./assets/ifood-sabores-05.png",
+        "recorte": {
+          "x": 488,
+          "y": 465,
+          "w": 140,
+          "h": 165
+        }
+      },
+      {
+        "id": "floresta-branca",
+        "nome": "Floresta Branca",
+        "descricao": "Uma pausa cremosa para o seu dia.",
+        "preco": 8.9,
+        "imagem": "./assets/ifood-sabores-05.png",
+        "recorte": {
+          "x": 488,
+          "y": 794,
+          "w": 164,
+          "h": 164
+        }
+      }
+    ]
   }
 };
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
@@ -144,17 +579,31 @@ const esc=text=>String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':
 function safeURL(value){if(!value)return '';try{const url=new URL(value,location.href);return ['https:','http:','file:'].includes(url.protocol)?url.href:''}catch{return ''}}
 function orderURL(message=CONFIG.mensagemPadrao){const number=CONFIG.whatsapp.replace(/\D/g,'');return /^\d{10,15}$/.test(number)?'https://wa.me/'+number+'?text='+encodeURIComponent(message):CONFIG.instagram}
 function placeholder(label,note='Foto da Duma a incluir'){const node=document.createElement('div');node.className='photo-placeholder';const title=document.createElement('span');title.textContent=label;const small=document.createElement('small');small.textContent=note;node.append(title,small);return node}
-function setPhoto(container,source,alt,eager=false,label='Foto da Duma'){const url=safeURL(source);if(!url)return;const img=new Image();img.alt=alt;img.width=900;img.height=1100;img.loading=eager?'eager':'lazy';img.decoding='async';if(eager)img.fetchPriority='high';img.addEventListener('error',()=>container.replaceChildren(placeholder(label)),{once:true});img.src=url;container.replaceChildren(img)}
-function bindLinks(){$$('[data-order]').forEach(link=>{link.href=orderURL(link.dataset.message);link.target='_blank';link.rel='noopener noreferrer'});$$('[data-instagram]').forEach(link=>link.href=safeURL(CONFIG.instagram))}
-CONFIG.produtos.forEach((p,i)=>{const card=document.createElement('article');card.className='cake-card';const message='Olá, Elaine! Quero encomendar o bolo '+p.nome+' para o dia ___';card.innerHTML='<div class="cake-image"></div><div class="cake-meta"><span>'+String(i+1).padStart(2,'0')+'</span><span>'+esc(p.nota)+'</span></div><h3>'+esc(p.nome)+'</h3><p>'+esc(p.descricao)+'</p><a class="text-link" data-order href="'+esc(orderURL(message))+'" aria-label="Encomendar o bolo '+esc(p.nome)+'">Encomendar este</a>';card.querySelector('a').dataset.message=message;const media=card.querySelector('.cake-image');media.append(placeholder(p.nome));setPhoto(media,p.imagem,p.alt,false,p.nome);$('#cake-track').append(card)});
+// Recorte na apresentação: pixels dos arquivos originais preservados.
+const cropObserver=new ResizeObserver(entries=>entries.forEach(entry=>entry.target.updateCrop?.()));
+function setPhoto(container,source,alt,eager=false,label='Foto da Duma',crop=null){
+const url=safeURL(source);if(!url)return;container.classList.add('media-frame');
+const surface=document.createElement('div');surface.className='photo-surface';
+const box=document.createElement('div');box.className='crop-box';
+const img=new Image();img.alt=alt;img.width=crop?720:900;img.height=crop?1600:1100;img.loading=eager?'eager':'lazy';img.decoding='async';if(eager)img.fetchPriority='high';
+if(crop){img.className='crop-source';img.style.visibility='hidden';box.updateCrop=()=>{const w=box.clientWidth,h=box.clientHeight;if(!w||!h||!img.naturalWidth)return;const scale=Math.max(w/crop.w,h/crop.h);img.style.width=img.naturalWidth*scale+'px';img.style.height=img.naturalHeight*scale+'px';img.style.left=(w-crop.w*scale)/2-crop.x*scale+'px';img.style.top=(h-crop.h*scale)/2-crop.y*scale+'px';img.style.visibility='visible'};img.addEventListener('load',async()=>{try{await img.decode()}catch{}box.updateCrop();cropObserver.observe(box)},{once:true})}
+img.addEventListener('error',()=>{cropObserver.unobserve(box);container.replaceChildren(placeholder(label))},{once:true});box.append(img);surface.append(box);container.replaceChildren(surface);img.src=url;
+}
+function bindLinks(){$$('[data-order]').forEach(link=>{link.href=orderURL(link.dataset.message);link.target='_blank';link.rel='noopener noreferrer'});$$('[data-instagram]').forEach(link=>link.href=safeURL(CONFIG.instagram));$$('[data-ifood]').forEach(link=>link.href=safeURL(CONFIG.ifood))}
+CONFIG.produtos.forEach((p,i)=>{const card=document.createElement('article');card.className='cake-card';const message='Olá, Elaine! Quero encomendar o bolo '+p.nome+' para o dia ___';card.innerHTML='<div class="cake-image"></div><div class="cake-meta"><span>'+String(i+1).padStart(2,'0')+'</span><span>'+esc(p.nota)+'</span></div><h3>'+esc(p.nome)+'</h3><p>'+esc(p.descricao)+'</p><a class="text-link" data-order href="'+esc(orderURL(message))+'" aria-label="Encomendar o bolo '+esc(p.nome)+'">Encomendar este</a>';card.querySelector('a').dataset.message=message;const media=card.querySelector('.cake-image');media.append(placeholder(p.nome));setPhoto(media,p.imagem,p.alt,false,p.nome,p.recorte);$('#cake-track').append(card)});
 CONFIG.elaine.textos.forEach(text=>{const p=document.createElement('p');p.textContent=text;$('#elaine-copy').append(p)});
 CONFIG.elaine.valores.forEach((text,i)=>{const li=document.createElement('li');li.innerHTML='<span>'+esc(text)+'</span><span>'+String(i+1).padStart(2,'0')+'</span>';$('#elaine-values').append(li)});
 CONFIG.depoimentos.forEach((item,i)=>{const empty=item.texto.includes('[SUBSTITUIR');const card=document.createElement('article');card.className='testimonial'+(empty?' is-placeholder':'');card.innerHTML='<span class="quote-mark" aria-hidden="true">“</span><blockquote>'+esc(empty?'Uma boa lembrança merece ser compartilhada.':item.texto)+'</blockquote><p>'+esc(empty?'Espaço '+String(i+1).padStart(2,'0')+' · depoimento real a incluir':item.nome||'Cliente Duma')+'</p>';$('#testimonials').append(card)});
 CONFIG.faq.forEach(item=>{const details=document.createElement('details'),summary=document.createElement('summary'),p=document.createElement('p');summary.textContent=item.pergunta;p.textContent=item.resposta;details.append(summary,p);$('#faq-list').append(details)});
-CONFIG.instagramFotos.forEach((item,i)=>{const link=document.createElement('a');link.className='insta-tile';link.href=safeURL(item.url||CONFIG.instagram);link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Ver foto '+(i+1)+' de @dumagourmet no Instagram');link.append(placeholder('Detalhe '+String(i+1).padStart(2,'0')));setPhoto(link,item.imagem,item.alt);$('#instagram-grid').append(link)});
-setPhoto($('[data-photo="hero"]'),CONFIG.fotos.hero,'Bolo alto de buttercream da Duma, com flores naturais e acabamento artesanal',true,'Bolos com buttercream');
-setPhoto($('[data-photo="elaine"]'),CONFIG.fotos.elaine,'Elaine Souza, dona e confeiteira da Duma Cozinha Gourmet',false,'Elaine Souza');
-if(CONFIG.fotos.logo)$$('.brand').forEach(brand=>{const img=new Image();img.width=90;img.height=90;img.alt='Duma Cozinha Gourmet';img.style.cssText='width:74px;height:74px;object-fit:contain';img.onload=()=>brand.replaceChildren(img);img.src=safeURL(CONFIG.fotos.logo)});
+CONFIG.instagramFotos.forEach((item,i)=>{const link=document.createElement('a');link.className='insta-tile';link.href=safeURL(item.url||CONFIG.instagram);link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Ver foto '+(i+1)+' de @dumagourmet no Instagram');link.append(placeholder('Detalhe '+String(i+1).padStart(2,'0')));setPhoto(link,item.imagem,item.alt,false,item.alt,item.recorte);$('#instagram-grid').append(link)});
+setPhoto($('[data-photo="hero"]'),CONFIG.fotos.hero,'Bolo alto de buttercream da Duma, com flores naturais e acabamento artesanal',true,'Bolos com buttercream',CONFIG.fotos.heroRecorte);
+setPhoto($('[data-photo="elaine"]'),CONFIG.fotos.elaine,'Elaine Souza, dona e confeiteira da Duma Cozinha Gourmet',false,'Elaine Souza',CONFIG.fotos.elaineRecorte);
+setPhoto($('[data-photo="detalhe"]'),CONFIG.fotos.detalhe,'Detalhe de bolo com cobertura escura e biscoitos',true,'Bolo Duma',CONFIG.fotos.detalheRecorte);
+if(CONFIG.fotos.logo)$$('.brand').forEach(brand=>{const box=document.createElement('span');box.className='brand-image media-frame';brand.replaceChildren(box);setPhoto(box,CONFIG.fotos.logo,'Logo Duma Cozinha Gourmet',true,'Duma',CONFIG.fotos.logoRecorte)});
+const money=value=>value===null?'Confira no app':new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(value);
+CONFIG.cardapio.destaques.forEach((id,i)=>{const product=CONFIG.cardapio.sabores.find(item=>item.id===id),article=document.createElement('article');article.className='menu-feature';article.innerHTML='<div class="menu-feature-photo media-frame"></div><div class="menu-feature-copy">'+(i===0?'<span class="menu-tag">Nossa escolha para você</span>':'')+'<h3>'+esc(product.nome)+'</h3><p>'+esc(product.descricao)+'</p><span class="menu-price">'+esc(money(product.preco))+'</span><a class="text-link" data-ifood href="'+esc(CONFIG.ifood)+'" target="_blank" rel="noopener noreferrer">Pedir no iFood</a></div>';setPhoto(article.querySelector('.menu-feature-photo'),product.imagem,'Geladinho gourmet da Duma: '+product.nome,false,product.nome,product.recorte);$('#menu-featured').append(article)});
+CONFIG.cardapio.sabores.forEach(product=>{const article=document.createElement('article');article.className='menu-item';article.innerHTML='<div class="menu-thumb media-frame"></div><div><h4>'+esc(product.nome)+'</h4><p>'+esc(product.descricao)+'</p><a class="text-link" data-ifood href="'+esc(CONFIG.ifood)+'" target="_blank" rel="noopener noreferrer">Ver no iFood</a></div><span class="menu-item-price">'+(product.preco===null?'<small>Confira no app</small>':esc(money(product.preco)))+'</span>';setPhoto(article.querySelector('.menu-thumb'),product.imagem,'Geladinho '+product.nome,false,product.nome,product.recorte);$('#menu-list').append(article)});
+$('#menu-more').addEventListener('toggle',()=>{drawThread();window.ScrollTrigger?.refresh()});
 $('#footer-address').textContent=CONFIG.entrega+'. Retirada: '+CONFIG.retirada+'.'+(CONFIG.regiao.startsWith('[')?'':' '+CONFIG.regiao+'.');
 $('#year').textContent=new Date().getFullYear();bindLinks();
 const menu=$('.menu-toggle'),nav=$('.nav');
@@ -172,7 +621,13 @@ stage.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key=
 track.addEventListener('focusin',event=>{if(pinTween){const card=event.target.closest('.cake-card');if(card)goToCake([...track.children].indexOf(card))}});
 stage.addEventListener('scroll',()=>{if(!pinTween){const gap=parseFloat(getComputedStyle(track).gap),span=track.firstElementChild.offsetWidth+gap;updateCounter(Math.round(stage.scrollLeft/span))}},{passive:true});updateCounter(0);
 const thread=$('#butter-path'),threadSvg=$('.butter-thread');
-function drawThread(){const main=$('main'),width=main.clientWidth,height=main.offsetHeight;threadSvg.setAttribute('viewBox','0 0 '+width+' '+height);threadSvg.style.height=height+'px';const sections=[...main.querySelectorAll('section')];const positions=sections.map(section=>{const box=section.parentElement.classList.contains('pin-spacer')?section.parentElement:section;return box.getBoundingClientRect().bottom-main.getBoundingClientRect().top-30});const left=Math.max(12,width*.025),right=width-left;let d='M '+right+' 160';positions.forEach((y,i)=>{const last=i===positions.length-1,rosette=$('.rosette').getBoundingClientRect(),x=last?width/2:i%2?left:right,endpoint=last?rosette.top-main.getBoundingClientRect().top+rosette.height/2:y,priorY=i?positions[i-1]:160,priorX=i%2?right:left;d+=' C '+priorX+' '+(priorY+70)+', '+x+' '+(endpoint-80)+', '+x+' '+endpoint});thread.setAttribute('d',d);return thread.getTotalLength()}
+function drawThread(){
+const main=$('main'),mainBox=main.getBoundingClientRect(),width=main.clientWidth,height=main.offsetHeight;
+threadSvg.setAttribute('viewBox','0 0 '+width+' '+height);threadSvg.style.height=height+'px';
+const sections=[...main.querySelectorAll('section')],left=Math.max(10,width*.025),right=width-left;let lastX=right,lastY=145,d='M '+right+' '+lastY;
+sections.forEach((section,i)=>{const layout=section.parentElement.classList.contains('pin-spacer')?section.parentElement:section,box=layout.getBoundingClientRect(),top=box.top-mainBox.top,bottom=box.bottom-mainBox.top,x=i%2?left:right;if(i>0){const y=top+22;d+=' C '+lastX+' '+(lastY+22)+' '+x+' '+(y-22)+' '+x+' '+y;lastY=y}const end=bottom-25,bulge=x===left?left+16:right-16;d+=' C '+bulge+' '+(lastY+(end-lastY)*.3)+' '+bulge+' '+(lastY+(end-lastY)*.7)+' '+x+' '+end;lastX=x;lastY=end});
+const rosette=$('.rosette').getBoundingClientRect(),rx=width/2,ry=rosette.top-mainBox.top+rosette.height/2;d+=' C '+lastX+' '+lastY+' '+rx+' '+(ry-80)+' '+rx+' '+ry;thread.setAttribute('d',d);return thread.getTotalLength();
+}
 drawThread();let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(drawThread,180)});$('#faq-list').addEventListener('toggle',()=>{drawThread();window.ScrollTrigger?.refresh()},true);
 // Leitura e pedidos continuam funcionando se uma biblioteca CDN estiver indisponível.
 function loadScript(src){return new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=src;script.async=true;const timeout=setTimeout(()=>reject(new Error('CDN indisponível')),9000);script.onload=()=>{clearTimeout(timeout);resolve()};script.onerror=()=>{clearTimeout(timeout);reject(new Error('CDN indisponível'))};document.head.append(script)})}
@@ -182,26 +637,40 @@ async function initMotion(){
   if(reduced.matches||!window.gsap||!window.ScrollTrigger)return;
   gsap.registerPlugin(ScrollTrigger);const mm=gsap.matchMedia();
   mm.add('(prefers-reduced-motion: no-preference)',()=>{
-    gsap.from('.hero-copy',{clipPath:'inset(0 0 100% 0)',y:20,duration:1.15,ease:'power3.out'});
-    gsap.from('.hero-visual',{clipPath:'inset(100% 0 0 0)',y:35,duration:1.35,delay:.15,ease:'power3.out'});
+    const entrance=gsap.timeline({defaults:{ease:'power3.out'}});
+entrance.from('.hero .eyebrow',{y:15,opacity:0,duration:.65}).from('.hero-line-inner',{yPercent:115,rotation:3,duration:1.1,stagger:.13},.1).from('.hero-description,.hero-actions',{y:20,opacity:0,duration:.8,stagger:.12},.65).from('.hero-photo',{clipPath:'inset(100% 0 0 0)',duration:1.3},.2).from('.hero-detail',{y:35,rotation:-15,opacity:0,duration:1},.7).from('.hero-stamp',{scale:.65,rotation:-20,opacity:0,duration:1,ease:'back.out(1.2)'},.8);
+gsap.to('.hero-stamp',{rotation:30,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:1}});
+gsap.to('.hero-detail',{y:-28,rotation:-4,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:1}});
     const sentence=$('#manifesto-title'),original=sentence.innerHTML;
     const walker=document.createTreeWalker(sentence,NodeFilter.SHOW_TEXT);const texts=[];while(walker.nextNode())texts.push(walker.currentNode);
     texts.forEach(node=>{const fragment=document.createDocumentFragment();node.textContent.split(/(\s+)/).forEach(word=>{if(!word.trim())fragment.append(document.createTextNode(word));else{const span=document.createElement('span');span.className='word';span.textContent=word;fragment.append(span)}});node.replaceWith(fragment)});
     gsap.fromTo('.manifesto .word',{opacity:.25,y:14},{opacity:1,y:0,stagger:.08,ease:'none',scrollTrigger:{trigger:'.manifesto',start:'top 75%',end:'bottom 75%',scrub:.6}});
-    $$('.pasta h2,.elaine h2,.clients h2,.how h2,.important h2,.instagram h2,.final h2').forEach(el=>gsap.from(el,{clipPath:'inset(0 0 100% 0)',y:18,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 92%',once:true}}));
-    const photo=$('.elaine-photo img');if(photo)gsap.fromTo(photo,{yPercent:-3},{yPercent:3,ease:'none',scrollTrigger:{trigger:'.elaine-photo',start:'top bottom',end:'bottom top',scrub:true}});
+    $$('.pasta h2,.ifood-menu h2,.elaine h2,.clients h2,.how h2,.important h2,.instagram h2,.final h2').forEach(el=>gsap.from(el,{clipPath:'inset(0 0 100% 0)',y:18,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 92%',once:true}}));
+    const desktop=matchMedia('(min-width: 768px)').matches;
+$$('.hero-photo .photo-surface,.elaine-photo .photo-surface,.menu-feature-photo .photo-surface').forEach(photo=>gsap.fromTo(photo,{yPercent:desktop?3:1.5},{yPercent:desktop?-3:-1.5,ease:'none',scrollTrigger:{trigger:photo.parentElement,start:'top bottom',end:'bottom top',scrub:1}}));
+$$('.insta-tile,.menu-feature-photo').forEach((photo,i)=>gsap.from(photo,{clipPath:'inset(100% 0 0 0)',duration:.9,delay:(i%3)*.08,ease:'power3.out',scrollTrigger:{trigger:photo,start:'top 92%',once:true}}));
+gsap.from('.step',{y:30,opacity:0,stagger:.12,duration:.8,scrollTrigger:{trigger:'.steps',start:'top 85%',once:true}});
+const rosette=$('.rosette path'),rosetteLength=rosette.getTotalLength();
+gsap.fromTo(rosette,{strokeDasharray:rosetteLength,strokeDashoffset:rosetteLength},{strokeDashoffset:0,ease:'none',scrollTrigger:{trigger:'.final',start:'top 80%',end:'bottom 90%',scrub:1}});
+const cleanupRosette=()=>gsap.set(rosette,{clearProps:'strokeDasharray,strokeDashoffset'});
     gsap.fromTo(thread,{strokeDasharray:()=>drawThread(),strokeDashoffset:()=>drawThread()},{strokeDashoffset:0,ease:'none',scrollTrigger:{trigger:'main',start:'top top',end:'bottom bottom',scrub:.8,invalidateOnRefresh:true}});
-    return()=>{sentence.innerHTML=original;thread.style.strokeDasharray='none';thread.style.strokeDashoffset='0'};
+    return()=>{sentence.innerHTML=original;thread.style.strokeDasharray='none';thread.style.strokeDashoffset='0';cleanupRosette()};
   });
   mm.add('(min-width: 1024px) and (prefers-reduced-motion: no-preference)',()=>{
     if(overflow()<=0)return;stage.scrollLeft=0;stage.classList.add('is-pinned');$('#cake-instruction').textContent='Continue rolando para conhecer os bolos. Ou use as setas para escolher.';
-    pinTween=gsap.to(track,{x:()=>-overflow(),ease:'none',scrollTrigger:{trigger:'.cakes',start:'top top',end:()=>'+='+overflow(),pin:true,scrub:.7,invalidateOnRefresh:true,onUpdate:self=>updateCounter(Math.round(self.progress*(CONFIG.produtos.length-1)))}});
+    pinTween=gsap.to(track,{x:()=>-overflow(),ease:'none',scrollTrigger:{trigger:'.cakes',start:'top top',end:()=>'+='+overflow(),pin:true,scrub:.35,invalidateOnRefresh:true,onUpdate:self=>updateCounter(Math.round(self.progress*(CONFIG.produtos.length-1)))}});
     return()=>{pinTween=null;stage.classList.remove('is-pinned');$('#cake-instruction').textContent='Deslize para encontrar sua inspiração. Cada encomenda começa com uma conversa.';updateCounter(0)};
   });
   ScrollTrigger.addEventListener('refresh',drawThread);document.fonts.ready.then(()=>ScrollTrigger.refresh());ScrollTrigger.refresh();
-  if(finePointer.matches&&!reduced.matches){try{await loadScript(CONFIG.bibliotecas.lenis);if(window.Lenis&&!reduced.matches){lenis=new Lenis({duration:1.05,smoothWheel:true,anchors:true});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(time=>lenis?.raf(time*1000));reduced.addEventListener('change',()=>{if(reduced.matches){lenis?.destroy();lenis=null}})}}catch{lenis=null}}
+  if(finePointer.matches&&!reduced.matches){try{await loadScript(CONFIG.bibliotecas.lenis);if(window.Lenis&&!reduced.matches){lenis=new Lenis({duration:1.15,smoothWheel:true,wheelMultiplier:.9,touchMultiplier:1});lenis.on('scroll',ScrollTrigger.update);document.documentElement.classList.add('lenis','lenis-smooth');gsap.ticker.add(time=>lenis?.raf(time*1000));reduced.addEventListener('change',()=>{if(reduced.matches){lenis?.destroy();lenis=null;document.documentElement.classList.remove('lenis','lenis-smooth')}})}}catch{lenis=null}}
 }
 if(finePointer.matches&&!reduced.matches){const cursor=$('.cursor');document.addEventListener('pointermove',event=>{if(reduced.matches)return;cursor.style.left=event.clientX+'px';cursor.style.top=event.clientY+'px';cursor.style.opacity='1';cursor.classList.toggle('is-over',!!event.target.closest('a,button,summary'))});document.addEventListener('pointerleave',()=>cursor.style.opacity='0');$$('.magnetic').forEach(button=>{button.addEventListener('pointermove',event=>{if(reduced.matches)return;const r=button.getBoundingClientRect();button.style.transform='translate('+((event.clientX-r.left-r.width/2)*.08)+'px,'+((event.clientY-r.top-r.height/2)*.12)+'px)'});button.addEventListener('pointerleave',()=>button.style.transform='')})}
+let headerFrame=0;
+function updateHeader(){headerFrame=0;const max=document.documentElement.scrollHeight-innerHeight,progress=max>0?scrollY/max:0;$('.header').classList.toggle('is-scrolled',scrollY>35);$('.header').style.setProperty('--page-progress',String(progress))}
+window.addEventListener('scroll',()=>{if(!headerFrame)headerFrame=requestAnimationFrame(updateHeader)},{passive:true});updateHeader();
+const activeObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;$$('.nav a[href^="#"]').forEach(a=>a.classList.toggle('is-active',a.getAttribute('href')==='#'+entry.target.id))}),{rootMargin:'-18% 0px -55% 0px'});
+$$('main section[id]').forEach(section=>activeObserver.observe(section));
+document.addEventListener('click',event=>{const anchor=event.target.closest('a[href^="#"]');if(!anchor||!lenis||reduced.matches)return;const target=document.querySelector(anchor.getAttribute('href'));if(!target)return;event.preventDefault();closeMenu();history.replaceState(null,'',anchor.getAttribute('href'));const section=target.parentElement.classList.contains('pin-spacer')?target.parentElement:target;lenis.scrollTo(section,{offset:target.id==='inicio'?0:-86,duration:1.2,onComplete:()=>{if(!target.hasAttribute('tabindex'))target.setAttribute('tabindex','-1');target.focus({preventScroll:true})}})});
 initMotion();
 </script>
 </body>
