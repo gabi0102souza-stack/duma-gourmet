@@ -77,6 +77,8 @@ html.lenis,html.lenis body{height:auto}html.lenis.lenis-smooth{scroll-behavior:a
 @media(prefers-reduced-motion:reduce){.ribbon-track{animation:none}.photo-surface{will-change:auto}.hero-line-inner{will-change:auto}.header,.header .brand-image{transition:none}.menu-feature-photo,.cake-image{transform:none!important}}
 
 @media(max-width:767px){.hero{padding-top:105px}.hero h1{font-size:clamp(52px,12vw,78px)}.hero .eyebrow{margin-bottom:12px}.hero-description{margin-top:16px}.hero-actions{margin-top:20px}.hero-actions [data-ifood]{display:none}.hero-grid{gap:24px}.hero-photo{height:clamp(235px,64vw,310px)}html{scroll-padding-top:88px}}
+.photo-surface .restored-photo{display:block;width:100%;height:100%;margin:0;object-fit:cover}.testimonial{background:var(--creme);display:flex;flex-direction:column;min-height:350px;box-shadow:0 8px 28px #52321306}.testimonial-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.testimonial-label{border:1px solid var(--pessego);border-radius:30px;padding:6px 10px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--cacau)}.testimonial blockquote{font-size:clamp(24px,2.1vw,31px);line-height:1.3}.testimonial-footer{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--pessego)}.testimonial-seal{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:50%;background:var(--pessego);color:var(--cacau);font-size:24px}.testimonial-footer p{font-size:13px;font-weight:600}.testimonial-footer small{display:block;margin-top:2px;font-size:11px;color:var(--cacau)}.clients .section-note{max-width:32ch;color:var(--cacau)}@media(min-width:1024px){.testimonial-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.testimonial{min-width:0;padding:28px}.testimonial-stage{overflow:visible}}@media(max-width:767px){.testimonial{min-height:370px;padding:25px}.testimonial blockquote{font-size:26px}}
+.footer .image-note{margin-top:8px}
 </style>
 </head>
 <body>
@@ -120,8 +122,8 @@ html.lenis,html.lenis body{height:auto}html.lenis.lenis-smooth{scroll-behavior:a
 <div><p class="eyebrow">03 / A dona da cozinha</p><h2 id="elaine-title">Feito pelas<br>mãos da <em>Elaine.</em></h2><p class="elaine-name">Elaine Souza</p><div class="elaine-copy" id="elaine-copy"></div><span class="hand signature">Com carinho, Elaine</span><ul class="values" id="elaine-values"></ul></div>
 </div></section>
 <section class="clients" id="clientes" aria-labelledby="clients-title"><div class="shell">
-<div class="section-head"><div><p class="eyebrow">04 / Clientes</p><h2 id="clients-title">Carinho que<br><em>volta pra gente.</em></h2></div><p class="section-note">Este espaço está reservado para as palavras de quem já provou.</p></div>
-<div class="testimonial-stage" tabindex="0" role="region" aria-label="Depoimentos de clientes. Deslize ou use as setas do teclado."><div class="testimonial-track" id="testimonials"></div></div>
+<div class="section-head"><div><p class="eyebrow">04 / Clientes</p><h2 id="clients-title">Carinho que<br><em>volta pra gente.</em></h2></div><p class="section-note">Feedbacks ilustrativos para visualizar esta área. Serão substituídos por avaliações reais.</p></div>
+<div class="testimonial-stage" tabindex="0" role="region" aria-label="Exemplos ilustrativos de feedbacks. Deslize ou use as setas do teclado."><div class="testimonial-track" id="testimonials"></div></div>
 </div></section>
 <section class="how" id="como-comprar" aria-labelledby="how-title"><div class="shell">
 <div class="section-head"><div><p class="eyebrow">05 / Como comprar</p><h2 id="how-title">Do seu desejo<br><em>à sua mesa.</em></h2></div><p class="section-note">Me conte o que você imaginou. Vamos combinar os detalhes juntas.</p></div>
@@ -143,12 +145,12 @@ html.lenis,html.lenis body{height:auto}html.lenis.lenis-smooth{scroll-behavior:a
 <section class="final" aria-labelledby="final-title"><div class="shell"><p class="eyebrow">Sua próxima celebração começa aqui</p><h2 id="final-title">Vamos fazer<br>algo <em>gostoso?</em></h2><p>Me conte seu desejo. Eu cuido do carinho em cada detalhe.</p><a class="btn magnetic" href="https://wa.me/5511983660573" data-order>Encomendar pelo WhatsApp</a><svg class="rosette" viewBox="0 0 100 100" aria-hidden="true"><path d="M51 48C44 39 31 44 33 56S53 72 64 59S63 33 45 31S19 43 20 59S39 85 58 78S86 52 75 31S45 15 28 24S8 48 14 65S44 94 67 83S98 47 84 24S47 4 28 16"/></svg></div></section>
 <noscript><p class="noscript">Para conhecer os bolos e combinar sua encomenda, <a class="text-link" href="https://wa.me/5511983660573">fale com a Elaine pelo WhatsApp</a>.</p></noscript>
 </main>
-<footer class="footer"><div class="shell"><div class="footer-grid"><a class="brand" href="#inicio" aria-label="Voltar ao início"><strong>DUMA</strong><span>cozinha gourmet</span></a><div class="footer-links"><a class="text-link" data-instagram href="https://www.instagram.com/dumagourmet/" target="_blank" rel="noopener noreferrer">Instagram</a><a class="text-link" data-order href="https://wa.me/5511983660573">WhatsApp</a><a class="text-link" data-ifood href="https://www.ifood.com.br/delivery/sao-paulo-sp/duma-gourmet---bolo-de-pote-geladinho-vila-curuca/d5eb26d9-3cec-48c6-91b6-81252acd18cf" target="_blank" rel="noopener noreferrer">iFood</a></div><p class="footer-address" id="footer-address">Entrega pelo iFood.<br>Retirada: Rua Benjamim Capusso, 703.</p></div><small>© <span id="year">2026</span> Duma Cozinha Gourmet. Levando sabores incríveis até você.</small></div></footer>
+<footer class="footer"><div class="shell"><div class="footer-grid"><a class="brand" href="#inicio" aria-label="Voltar ao início"><strong>DUMA</strong><span>cozinha gourmet</span></a><div class="footer-links"><a class="text-link" data-instagram href="https://www.instagram.com/dumagourmet/" target="_blank" rel="noopener noreferrer">Instagram</a><a class="text-link" data-order href="https://wa.me/5511983660573">WhatsApp</a><a class="text-link" data-ifood href="https://www.ifood.com.br/delivery/sao-paulo-sp/duma-gourmet---bolo-de-pote-geladinho-vila-curuca/d5eb26d9-3cec-48c6-91b6-81252acd18cf" target="_blank" rel="noopener noreferrer">iFood</a></div><p class="footer-address" id="footer-address">Entrega pelo iFood.<br>Retirada: Rua Benjamim Capusso, 703.</p></div><small>© <span id="year">2026</span> Duma Cozinha Gourmet. Levando sabores incríveis até você.</small><small class="image-note">Algumas fotos receberam restauração de nitidez com IA.</small></div></footer>
 <div class="mobile-order"><a class="btn" href="https://wa.me/5511983660573" data-order>Encomendar no WhatsApp</a></div>
 <div class="cursor" aria-hidden="true"></div>
 <script>
 // CONFIG: troque os dados e caminhos aqui. Fotos ausentes usam apenas a paleta.
-// Fotos reais: recorte delimita a foto no print sem alterar o original.
+// Fotos restauradas com image_gen; originais mantidos em assets. Recortes só para fotos ainda provenientes dos prints.
 // Se receber a foto original, troque imagem e remova recorte.
 // Nomes dos bolos descrevem a decoração; sabores e detalhes são combinados com a Elaine.
 const CONFIG = {
@@ -166,78 +168,43 @@ const CONFIG = {
       "w": 136,
       "h": 136
     },
-    "hero": "./assets/instagram-bolos.png",
-    "heroRecorte": {
-      "x": 245,
-      "y": 857,
-      "w": 231,
-      "h": 311
-    },
-    "elaine": "./assets/instagram-perfil.png",
-    "elaineRecorte": {
-      "x": 484,
-      "y": 902,
-      "w": 232,
-      "h": 312
-    },
-    "detalhe": "./assets/instagram-bolos.png",
-    "detalheRecorte": {
-      "x": 244,
-      "y": 258,
-      "w": 232,
-      "h": 268
-    }
+    "hero": "./assets/bolo-rosas-hd.webp",
+    "heroRecorte": null,
+    "elaine": "./assets/elaine-hd.webp",
+    "elaineRecorte": null,
+    "detalhe": "./assets/bolo-biscoitos-hd.webp",
+    "detalheRecorte": null
   },
   "produtos": [
     {
       "nome": "Flores vermelhas",
       "descricao": "Flores, dois andares e buttercream delicado. Uma inspiração para celebrar.",
-      "imagem": "./assets/instagram-bolos.png",
-      "recorte": {
-        "x": 4,
-        "y": 578,
-        "w": 230,
-        "h": 269
-      },
+      "imagem": "./assets/bolo-flores-vermelhas-hd.webp",
+      "recorte": null,
       "alt": "Bolo da Duma com dois andares de buttercream e flores vermelhas",
       "nota": "Flores & celebração"
     },
     {
       "nome": "Buttercream & rosas",
       "descricao": "Flores em tons de rosa e detalhes feitos com bico de confeitar.",
-      "imagem": "./assets/instagram-bolos.png",
-      "recorte": {
-        "x": 245,
-        "y": 857,
-        "w": 231,
-        "h": 311
-      },
+      "imagem": "./assets/bolo-rosas-hd.webp",
+      "recorte": null,
       "alt": "Bolo branco de três andares com flores em tons de rosa",
       "nota": "Carinho em cada andar"
     },
     {
       "nome": "Clássico em branco",
       "descricao": "Buttercream texturizado e uma composição elegante para sua mesa.",
-      "imagem": "./assets/instagram-bolos.png",
-      "recorte": {
-        "x": 3,
-        "y": 258,
-        "w": 232,
-        "h": 269
-      },
+      "imagem": "./assets/bolo-classico-branco-hd.webp",
+      "recorte": null,
       "alt": "Bolo branco de dois andares com acabamento texturizado, sobre base dourada",
       "nota": "Textura artesanal"
     },
     {
       "nome": "Flores em tons de rosa",
       "descricao": "Um encontro de flores e texturas suaves, com o cuidado da Duma.",
-      "imagem": "./assets/instagram-bolos.png",
-      "recorte": {
-        "x": 486,
-        "y": 857,
-        "w": 230,
-        "h": 310
-      },
+      "imagem": "./assets/bolo-petalas-rosa-hd.webp",
+      "recorte": null,
       "alt": "Detalhe de bolo da Duma com flores claras e flores em tons de rosa",
       "nota": "Detalhes que encantam"
     }
@@ -255,16 +222,19 @@ const CONFIG = {
   },
   "depoimentos": [
     {
-      "texto": "[SUBSTITUIR POR DEPOIMENTO REAL]",
-      "nome": ""
+      "texto": "O bolo deixou a mesa linda! A decoração ficou delicada, com aquele cuidado que dá vontade de guardar em foto.",
+      "categoria": "Bolos para celebrar",
+      "ilustrativo": true
     },
     {
-      "texto": "[SUBSTITUIR POR DEPOIMENTO REAL]",
-      "nome": ""
+      "texto": "Uma pausa gostosa no meio do dia. Adorei a combinação cremosa do Ninho com Nutella!",
+      "categoria": "Geladinhos gourmet",
+      "ilustrativo": true
     },
     {
-      "texto": "[SUBSTITUIR POR DEPOIMENTO REAL]",
-      "nome": ""
+      "texto": "Do primeiro contato à escolha dos detalhes, tudo com muito carinho. Dá vontade de encomendar de novo!",
+      "categoria": "Encomendas com carinho",
+      "ilustrativo": true
     }
   ],
   "fluxo": "[CONFIRMAR COM A ELAINE: disponibilidade, personalização e pagamento. Entrega e retirada informadas pelo responsável.]",
@@ -288,33 +258,18 @@ const CONFIG = {
   ],
   "instagramFotos": [
     {
-      "imagem": "./assets/instagram-bolos.png",
-      "recorte": {
-        "x": 3,
-        "y": 258,
-        "w": 232,
-        "h": 269
-      },
+      "imagem": "./assets/bolo-classico-branco-hd.webp",
+      "recorte": null,
       "alt": "Bolo branco texturizado sobre base dourada"
     },
     {
-      "imagem": "./assets/instagram-bolos.png",
-      "recorte": {
-        "x": 244,
-        "y": 258,
-        "w": 232,
-        "h": 268
-      },
+      "imagem": "./assets/bolo-biscoitos-hd.webp",
+      "recorte": null,
       "alt": "Bolo com cobertura escura e biscoitos na decoração"
     },
     {
-      "imagem": "./assets/instagram-bolos.png",
-      "recorte": {
-        "x": 4,
-        "y": 578,
-        "w": 230,
-        "h": 269
-      },
+      "imagem": "./assets/bolo-flores-vermelhas-hd.webp",
+      "recorte": null,
       "alt": "Bolo de dois andares com flores vermelhas"
     },
     {
@@ -328,23 +283,13 @@ const CONFIG = {
       "alt": "Bolo branco quadrado com decoração de flores"
     },
     {
-      "imagem": "./assets/instagram-bolos.png",
-      "recorte": {
-        "x": 4,
-        "y": 857,
-        "w": 231,
-        "h": 311
-      },
+      "imagem": "./assets/bolo-flores-vermelhas-hd.webp",
+      "recorte": null,
       "alt": "Buttercream branco com acabamento em ondas e detalhes amarelos"
     },
     {
-      "imagem": "./assets/instagram-bolos.png",
-      "recorte": {
-        "x": 245,
-        "y": 857,
-        "w": 231,
-        "h": 311
-      },
+      "imagem": "./assets/bolo-rosas-hd.webp",
+      "recorte": null,
       "alt": "Bolo de três andares com flores em tons de rosa"
     }
   ],
@@ -432,13 +377,8 @@ const CONFIG = {
         "nome": "Coco",
         "descricao": "O carinho de um sabor clássico.",
         "preco": 8.27,
-        "imagem": "./assets/ifood-sabores-02.png",
-        "recorte": {
-          "x": 459,
-          "y": 984,
-          "w": 222,
-          "h": 164
-        }
+        "imagem": "./assets/geladinho-coco-hd.webp",
+        "recorte": null
       },
       {
         "id": "doce-leite-ameixa",
@@ -484,13 +424,8 @@ const CONFIG = {
         "nome": "Ninho com Nutella",
         "descricao": "Uma combinação para saborear devagar.",
         "preco": 9.17,
-        "imagem": "./assets/ifood-sabores-03.png",
-        "recorte": {
-          "x": 459,
-          "y": 962,
-          "w": 222,
-          "h": 162
-        }
+        "imagem": "./assets/geladinho-ninho-nutella-hd.webp",
+        "recorte": null
       },
       {
         "id": "romeu-julieta",
@@ -562,13 +497,8 @@ const CONFIG = {
         "nome": "Floresta Branca",
         "descricao": "Uma pausa cremosa para o seu dia.",
         "preco": 8.9,
-        "imagem": "./assets/ifood-sabores-05.png",
-        "recorte": {
-          "x": 488,
-          "y": 794,
-          "w": 164,
-          "h": 164
-        }
+        "imagem": "./assets/geladinho-floresta-branca-hd.webp",
+        "recorte": null
       }
     ]
   }
@@ -585,7 +515,7 @@ function setPhoto(container,source,alt,eager=false,label='Foto da Duma',crop=nul
 const url=safeURL(source);if(!url)return;container.classList.add('media-frame');
 const surface=document.createElement('div');surface.className='photo-surface';
 const box=document.createElement('div');box.className='crop-box';
-const img=new Image();img.alt=alt;img.width=crop?720:900;img.height=crop?1600:1100;img.loading=eager?'eager':'lazy';img.decoding='async';if(eager)img.fetchPriority='high';
+const img=new Image();img.alt=alt;img.width=crop?720:900;img.height=crop?1600:1100;img.loading=eager?'eager':'lazy';img.decoding='async';if(!crop)img.className='restored-photo';if(eager)img.fetchPriority='high';
 if(crop){img.className='crop-source';img.style.visibility='hidden';box.updateCrop=()=>{const w=box.clientWidth,h=box.clientHeight;if(!w||!h||!img.naturalWidth)return;const scale=Math.max(w/crop.w,h/crop.h);img.style.width=img.naturalWidth*scale+'px';img.style.height=img.naturalHeight*scale+'px';img.style.left=(w-crop.w*scale)/2-crop.x*scale+'px';img.style.top=(h-crop.h*scale)/2-crop.y*scale+'px';img.style.visibility='visible'};img.addEventListener('load',async()=>{try{await img.decode()}catch{}box.updateCrop();cropObserver.observe(box)},{once:true})}
 img.addEventListener('error',()=>{cropObserver.unobserve(box);container.replaceChildren(placeholder(label))},{once:true});box.append(img);surface.append(box);container.replaceChildren(surface);img.src=url;
 }
@@ -593,7 +523,7 @@ function bindLinks(){$$('[data-order]').forEach(link=>{link.href=orderURL(link.d
 CONFIG.produtos.forEach((p,i)=>{const card=document.createElement('article');card.className='cake-card';const message='Olá, Elaine! Quero encomendar o bolo '+p.nome+' para o dia ___';card.innerHTML='<div class="cake-image"></div><div class="cake-meta"><span>'+String(i+1).padStart(2,'0')+'</span><span>'+esc(p.nota)+'</span></div><h3>'+esc(p.nome)+'</h3><p>'+esc(p.descricao)+'</p><a class="text-link" data-order href="'+esc(orderURL(message))+'" aria-label="Encomendar o bolo '+esc(p.nome)+'">Encomendar este</a>';card.querySelector('a').dataset.message=message;const media=card.querySelector('.cake-image');media.append(placeholder(p.nome));setPhoto(media,p.imagem,p.alt,false,p.nome,p.recorte);$('#cake-track').append(card)});
 CONFIG.elaine.textos.forEach(text=>{const p=document.createElement('p');p.textContent=text;$('#elaine-copy').append(p)});
 CONFIG.elaine.valores.forEach((text,i)=>{const li=document.createElement('li');li.innerHTML='<span>'+esc(text)+'</span><span>'+String(i+1).padStart(2,'0')+'</span>';$('#elaine-values').append(li)});
-CONFIG.depoimentos.forEach((item,i)=>{const empty=item.texto.includes('[SUBSTITUIR');const card=document.createElement('article');card.className='testimonial'+(empty?' is-placeholder':'');card.innerHTML='<span class="quote-mark" aria-hidden="true">“</span><blockquote>'+esc(empty?'Uma boa lembrança merece ser compartilhada.':item.texto)+'</blockquote><p>'+esc(empty?'Espaço '+String(i+1).padStart(2,'0')+' · depoimento real a incluir':item.nome||'Cliente Duma')+'</p>';$('#testimonials').append(card)});
+CONFIG.depoimentos.forEach(item=>{const card=document.createElement('article');card.className='testimonial';card.innerHTML='<div class="testimonial-top"><span class="quote-mark" aria-hidden="true">“</span>'+(item.ilustrativo?'<span class="testimonial-label">Exemplo ilustrativo</span>':'')+'</div><blockquote>'+esc(item.texto)+'</blockquote><div class="testimonial-footer"><span class="testimonial-seal" aria-hidden="true">♡</span><div><p>'+esc(item.categoria||item.nome||'Cliente Duma')+'</p><small>'+esc(item.ilustrativo?'Texto de demonstração':'Feedback de cliente')+'</small></div></div>';$('#testimonials').append(card)});
 CONFIG.faq.forEach(item=>{const details=document.createElement('details'),summary=document.createElement('summary'),p=document.createElement('p');summary.textContent=item.pergunta;p.textContent=item.resposta;details.append(summary,p);$('#faq-list').append(details)});
 CONFIG.instagramFotos.forEach((item,i)=>{const link=document.createElement('a');link.className='insta-tile';link.href=safeURL(item.url||CONFIG.instagram);link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Ver foto '+(i+1)+' de @dumagourmet no Instagram');link.append(placeholder('Detalhe '+String(i+1).padStart(2,'0')));setPhoto(link,item.imagem,item.alt,false,item.alt,item.recorte);$('#instagram-grid').append(link)});
 setPhoto($('[data-photo="hero"]'),CONFIG.fotos.hero,'Bolo alto de buttercream da Duma, com flores naturais e acabamento artesanal',true,'Bolos com buttercream',CONFIG.fotos.heroRecorte);
